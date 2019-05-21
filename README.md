@@ -8,10 +8,10 @@ This is a simple python X O X game.
 
 Here are the steps:
 
-* Display the board
+* Display the board after each steps
 * Ask user to user to play or not
 * Choose randomly player which will play first
-* Create a loop until one of the user win or any blank fields left.
+* Create a loop until one of the user win or any blank fields left on the board.
 * Start to get inputs from players one by one
 
 Enjoy
