@@ -1,9 +1,7 @@
-from IPython.display import clear_output
 import random
 
 def display_board(board):
-    clear_output()  # Remember, this only works in jupyter!
-    
+    print('\n'*100)
     print('   |   |')
     print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
     print('   |   |')
@@ -67,7 +65,7 @@ def player_choice(board):
 
 def replay():
     
-    return input('Do you want to play again? Enter Yes or No: ').lower().startswith('y')
+    return input('Do you want to play again? Enter Yes or No : ').lower().startswith('y')
 
 def main():
     print('Welcome to Tic Tac Toe!')
@@ -79,7 +77,7 @@ def main():
         turn = choose_first()
         print(turn + ' will go first.')
         
-        play_game = input('Are you ready to play? Enter Yes or No.')
+        play_game = input('Are you ready to play? Enter Yes or No : ')
         
         if play_game.lower()[0] == 'y':
             game_on = True
@@ -128,5 +126,5 @@ def main():
         if not replay():
             break
 
-
-main()
+if __name__ == '__main__':
+    main()
